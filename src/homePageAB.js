@@ -121,7 +121,7 @@ class HomePage extends Component {
                                                             <div className="adult_inp_div">
                                                                 <button className={this.state.adults === 1 ? "disable_svg_button" : "minus_button"} onClick={this.adultMinusChange} disabled={this.state.adults === 1}>
                                                                     <span>
-                                                                    <svg viewBox="0 0 24 24" role="img" aria-label="subtract" focusable="false"><rect height="2" rx="1" width="12" x="6" y="11"></rect></svg>
+                                                                    <svg className="minusSVG" viewBox="0 0 24 24" role="img" aria-label="subtract" focusable="false"><rect height="2" rx="1" width="12" x="6" y="11"></rect></svg>
                                                                     </span>
                                                                 </button>
                                                                 <input className="adult_input" type="number" value={this.state.adults}></input>
@@ -137,7 +137,7 @@ class HomePage extends Component {
                                                             <div className="child_inp_div">
                                                                 <button className={this.state.child === 0 ? "disable_svg_button" : "minus_button"} onClick={this.childMinusChange} disabled={this.state.child === 0}>
                                                                     <span>
-                                                                    <svg viewBox="0 0 24 24" role="img" aria-label="subtract" focusable="false"><rect height="2" rx="1" width="12" x="6" y="11"></rect></svg>
+                                                                    <svg className="minusSVG" viewBox="0 0 24 24" role="img" aria-label="subtract" focusable="false"><rect height="2" rx="1" width="12" x="6" y="11"></rect></svg>
                                                                     </span>
                                                                 </button>
                                                                 <input className="child_input" type="number" value={this.state.child}></input>

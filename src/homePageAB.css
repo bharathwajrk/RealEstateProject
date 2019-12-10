@@ -166,6 +166,18 @@
   text-align: center;
 }
 
+.searchlocation_input:focus ~ .searchlocation_inp_div{
+  border: 1px solid rgb(8, 89, 244) !important;
+}
+
+input{
+  outline: none;
+}
+
+.adult_input:active, .child_input:active{
+  border: 0px none !important;
+}
+
 .disable_svg_button{
   border-color: rgb(168, 196, 249) !important;
   cursor: not-allowed;
@@ -214,8 +226,10 @@
   touch-action: manipulation !important; 
 }
 
-.plusSVG{
-  height: 1em; width: 1em; display: block; fill: currentcolor;
+.plusSVG, .minusSVG{
+  /* height: 1em; width: 1em; display: block; fill: currentcolor; */
+  fill: currentcolor;
+  color: rgb(8, 89, 244) !important;
 }
 
 .minus_button:active, .plus_button:active{
@@ -245,4 +259,10 @@
   width: 98%;
   height: 35%;
   line-height: 5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
