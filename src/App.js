@@ -1,3 +1,8 @@
+/*
+  Author: Bharathwaj RK
+  Date : 10 Dec 2019
+  This is a demo app created to learn react js and inspired from Airbnb site
+*/
 import React, { Component } from 'react';
 import Navbar from './components/utils/navbar'
 import HomePage from './components/home/homePageAB';
